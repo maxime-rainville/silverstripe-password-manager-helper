@@ -1,6 +1,6 @@
 {
-    "name": "silverstripe-module/skeleton",
-    "description": "A skeleton for SilverStripe modules.",
+    "name": "maxime-rainville/silverstripe-password-manager-helper",
+    "description": "Tweak Siverstripe CMS to work better with password managers",
     "type": "silverstripe-vendormodule",
     "keywords": [
         "silverstripe",
@@ -12,7 +12,7 @@
         "silverstripe/admin": "^1.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.7",
+        "phpunit/phpunit": "^9.5",
         "squizlabs/php_codesniffer": "^3.0"
     },
     "autoload": {
@@ -20,14 +20,6 @@
             "SilverStripeModule\\Skeleton\\": "src/",
             "SilverStripeModule\\Skeleton\\Tests\\": "tests/"
         }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.x-dev"
-        },
-        "expose": [
-            "client/dist"
-        ]
     },
     "minimum-stability": "dev",
     "prefer-stable": true
