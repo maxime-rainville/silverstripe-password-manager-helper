@@ -1,0 +1,10 @@
+SilverStripe\Control\Director:
+  rules:
+    '.well-known/change-password':
+      Controller: '%$MaximeRainville\SilverstripePasswordManagerHelper\WellKnown'
+
+SilverStripe\Core\Injector\Injector:
+  SilverStripe\Forms\PasswordField:
+    class: MaximeRainville\SilverstripePasswordManagerHelper\PasswordField
+  SilverStripe\Forms\ConfirmedPasswordField:
+    class: MaximeRainville\SilverstripePasswordManagerHelper\ConfirmedPasswordField

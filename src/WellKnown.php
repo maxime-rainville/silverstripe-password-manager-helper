@@ -16,6 +16,7 @@ class WellKnown extends Controller
     {
         //** @var CMSProfileController $profile  */
         $profile = CMSProfileController::create();
+        $request->getSession()->set('ForceShowConfirmPassword', true);
         return $this->redirect($profile->Link());
     }
 }
